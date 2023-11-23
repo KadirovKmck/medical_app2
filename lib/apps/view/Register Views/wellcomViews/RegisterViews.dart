@@ -27,7 +27,7 @@ class _RegisterViewsState extends State<RegisterViews> {
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
                       type: PageTransitionType.rightToLeft,
-                      child: SingUpView(),
+                      child: RegisterHomeView(),
                       inheritTheme: true,
                       ctx: context),
                 );
@@ -64,50 +64,52 @@ class _RegisterViewsState extends State<RegisterViews> {
                         color: Color(0xffF4F7FF)),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
-                      child: Column(children: [
-                        Container(
-                          height: 100,
-                          width: 330,
-                          child: Text(
-                            'Consult only with a doctor you trust',
-                            style: TextStyle(
-                                fontSize: 25,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 330,
+                            child: Text(
+                              'Consult only with a doctor you trust',
+                              style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500),
+                            ),
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 250),
-                          child: Row(
-                            children: [
-                              InkWell(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    PageTransition(
-                                        alignment: Alignment.bottomCenter,
-                                        duration: Duration(milliseconds: 400),
-                                        reverseDuration:
-                                            Duration(milliseconds: 400),
-                                        type: PageTransitionType.rightToLeft,
-                                        child: RegesterSecondViews(),
-                                        inheritTheme: true,
-                                        ctx: context),
-                                  );
-                                },
-                                child: Container(
-                                    height: 50,
-                                    width: 50,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      color: Color(0xff199A8E),
-                                    ),
-                                    child: Icon(Icons.arrow_forward)),
-                              ),
-                            ],
-                          ),
-                        )
-                      ]),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 250),
+                            child: Row(
+                              children: [
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      PageTransition(
+                                          alignment: Alignment.bottomCenter,
+                                          duration: Duration(milliseconds: 400),
+                                          reverseDuration:
+                                              Duration(milliseconds: 400),
+                                          type: PageTransitionType.rightToLeft,
+                                          child: RegesterSecondViews(),
+                                          inheritTheme: true,
+                                          ctx: context),
+                                    );
+                                  },
+                                  child: Container(
+                                      height: 50,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: Color(0xff199A8E),
+                                      ),
+                                      child: Icon(Icons.arrow_forward)),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),

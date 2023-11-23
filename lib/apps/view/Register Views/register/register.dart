@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:medical_app2/apps/view/Register%20Views/login%20view/loginView.dart';
 import 'package:page_transition/page_transition.dart';
 
-class SingUpView extends StatefulWidget {
-  const SingUpView({super.key});
+class RegisterHomeView extends StatefulWidget {
+  const RegisterHomeView({super.key});
 
   @override
-  State<SingUpView> createState() => _SingUpViewState();
+  State<RegisterHomeView> createState() => _SingUpViewState();
 }
 
-class _SingUpViewState extends State<SingUpView> {
+class _SingUpViewState extends State<RegisterHomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

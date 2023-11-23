@@ -19,18 +19,19 @@ class _RegesterSecondViewsState extends State<RegesterSecondViews> {
           Padding(
             padding: EdgeInsets.only(left: 320, top: 100),
             child: TextButton(
-              onPressed: () { Navigator.push(
-                                context,
-                                PageTransition(
-                                    alignment: Alignment.bottomCenter,
-                                    duration: Duration(milliseconds: 400),
-                                    reverseDuration:
-                                        Duration(milliseconds: 400),
-                                    type: PageTransitionType.rightToLeft,
-                                    child: SingUpView(),
-                                    inheritTheme: true,
-                                    ctx: context),
-                              );},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                      alignment: Alignment.bottomCenter,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      type: PageTransitionType.rightToLeft,
+                      child: RegisterHomeView(),
+                      inheritTheme: true,
+                      ctx: context),
+                );
+              },
               child: const Text(
                 'Skip',
                 style: TextStyle(

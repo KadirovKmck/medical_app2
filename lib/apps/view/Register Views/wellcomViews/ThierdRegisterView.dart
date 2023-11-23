@@ -19,18 +19,17 @@ class _ThierdRegisterViewState extends State<ThierdRegisterView> {
             padding: EdgeInsets.only(left: 320, top: 100),
             child: TextButton(
               onPressed: () {
-                 Navigator.push(
-                                context,
-                                PageTransition(
-                                    alignment: Alignment.bottomCenter,
-                                    duration: Duration(milliseconds: 400),
-                                    reverseDuration:
-                                        Duration(milliseconds: 400),
-                                    type: PageTransitionType.rightToLeft,
-                                    child: SingUpView(),
-                                    inheritTheme: true,
-                                    ctx: context),
-                              );
+                Navigator.push(
+                  context,
+                  PageTransition(
+                      alignment: Alignment.bottomCenter,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      type: PageTransitionType.rightToLeft,
+                      child: RegisterHomeView(),
+                      inheritTheme: true,
+                      ctx: context),
+                );
               },
               child: const Text(
                 'Skip',
@@ -88,7 +87,7 @@ class _ThierdRegisterViewState extends State<ThierdRegisterView> {
                                     reverseDuration:
                                         Duration(milliseconds: 400),
                                     type: PageTransitionType.rightToLeft,
-                                    child: SingUpView(),
+                                    child: RegisterHomeView(),
                                     inheritTheme: true,
                                     ctx: context),
                               );
